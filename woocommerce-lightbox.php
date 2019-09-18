@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WooCommerce Lightbox
  * Plugin URI: http://woocommerce.com/products/woocommerce-extension/
@@ -20,6 +21,19 @@
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  */
 
-echo "Hello World";
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
 
-echo "This is the first commit";
+
+/**
+ * Check if WooCommerce is active
+ **/
+if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+
+    global $woocommerce;
+
+    
+
+
+}
