@@ -5,10 +5,10 @@
  * Plugin URI: http://woocommerce.com/products/woocommerce-extension/
  * Description: Your extension's description text.
  * Version: 1.0.0
- * Author: Your Name
- * Author URI: http://yourdomain.com/
- * Developer: Your Name
- * Developer URI: http://yourdomain.com/
+ * Author: Michael Neely
+ * Author URI: https://michaelneely.net
+ * Developer: Michael Neely
+ * Developer URI: https://michaelneely.net
  * Text Domain: woocommerce-extension
  * Domain Path: /languages
  *
