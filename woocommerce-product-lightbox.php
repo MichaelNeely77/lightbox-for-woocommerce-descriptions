@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WooCommerce Lightbox
+ * Plugin Name: WooCommerce Product Lightbox
  * Plugin URI: http://woocommerce.com/products/woocommerce-extension/
  * Description: Your extension's description text.
  * Version: 1.0.0
