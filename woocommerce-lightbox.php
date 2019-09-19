@@ -48,7 +48,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     add_action( 'wp_enqueue_scripts', 'fancybox-style' );
     add_action( 'wp_enqueue_scripts', 'fancybox-style-min' );
     add_action( 'wp_enqueue_scripts', 'fancybox-js' );
-    add_action( 'wp_enqueue_scripts', 'tfancybox-js-min' );
+    add_action( 'wp_enqueue_scripts', 'fancybox-js-min' );
 
     
 
