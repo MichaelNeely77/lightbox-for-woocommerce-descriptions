@@ -33,6 +33,23 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
     global $woocommerce;
 
+    /* Adds Fancybox cdn     */
+
+    function wc_lightbox_enqueue_style() {
+        wp_enqueue_style( 'fancybox-style', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css', false );
+        wp_enqueue_style( 'fancybox-style-min', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', false );
+    }
+     
+    function wc_lightbox_enqueue_script() {
+        wp_enqueue_script( 'fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js', false );
+        wp_enqueue_script( 'fancybox-js-min', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', false );
+    }
+     
+    add_action( 'wp_enqueue_scripts', 'fancybox-style' );
+    add_action( 'wp_enqueue_scripts', 'fancybox-style-min' );
+    add_action( 'wp_enqueue_scripts', 'fancybox-js' );
+    add_action( 'wp_enqueue_scripts', 'tfancybox-js-min' );
+
     
 
 
