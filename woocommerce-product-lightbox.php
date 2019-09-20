@@ -37,13 +37,13 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 
 
     function wc_lightbox_enqueue_style() {
-        wp_enqueue_style( 'fancybox-style', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css', false );
-        wp_enqueue_style( 'fancybox-style-min', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', false );
+        wp_enqueue_style( 'fancybox-style', plugin_url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css', __FILE__), false );
+        wp_enqueue_style( 'fancybox-style-min', plugin_url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', __FILE__), false );
     }
 
     function wc_lightbox_enqueue_script() {
-        wp_enqueue_script( 'fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js', false );
-        wp_enqueue_script( 'fancybox-js-min', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', false );
+        wp_enqueue_script( 'fancybox-js', plugin_url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js', __FILE__), false );
+        wp_enqueue_script( 'fancybox-js-min', plugin_url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css',__FILE__), false );
     }
 
      
